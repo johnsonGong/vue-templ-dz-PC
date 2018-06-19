@@ -5,6 +5,7 @@
   "author": "{{ author }}",
   "private": true,
   "scripts": {
+    "mock": "node_modules/.bin/json-server --watch mock/db.json --routes mock/dbroutes.json --port 8095",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     {{#if_eq runner "jest"}}
