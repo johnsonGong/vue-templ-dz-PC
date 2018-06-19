@@ -1,0 +1,14 @@
+{
+  "initPage": {
+    "message": "执行成功",
+    "success": true
+  },
+  "getUserInfo": {
+    "message": "执行成功",
+    "success": true,
+    "content": {
+      "name": "张三",
+      "age": 18
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "/mock/initPage.json": "/initPage",
+  "/mock/getUserInfo.json*": "/getUserInfo"
+}

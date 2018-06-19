@@ -80,6 +80,15 @@
         </a>
       </li>
     </ul>
+
+    <h2>自定义模板</h2>
+    <ul class="tmp-body">
+      <li>1.加入 状态管理组件: vuex;</li>
+      <li>2.加入 ajax组件: axios, qs;</li>
+      <li>3.加入 本地Mock方案: json-server, 路径: mock;</li>
+      <li>4.加入 api调用方案;</li>
+    </ul>
+
   </div>
 </template>
 

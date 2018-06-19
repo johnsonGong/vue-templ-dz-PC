@@ -11,6 +11,23 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {},
+    // 参考资料: https://webpack.js.org/configuration/dev-server/#devserver-proxy
+    proxyTable: [{
+        context: [
+                '/demo',
+                '/api-userinfo'
+            ],
+            target: 'http://localhost:8095',
+            changeOrigin: true,
+            onProxyReq: function (proxyReq, req, res) {
+                // 将所有请求(post)全部的 method 代理为 GET
+                proxyReq.method = 'GET'
+                return proxyReq
+            }
+        }, {
+            context: ['/pc-static'],
+            pathRewrite: {'^/pc-static': '/static'}
+    }],
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

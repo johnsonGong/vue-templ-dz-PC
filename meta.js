@@ -31,13 +31,13 @@ module.exports = {
       return templateVersion
     },
   },
-  
+
   prompts: {
     name: {
       when: 'isNotTest',
       type: 'string',
       required: true,
-      message: 'Project name',
+      message: 'Project name[项目名--》]',
     },
     description: {
       when: 'isNotTest',
@@ -73,6 +73,13 @@ module.exports = {
       when: 'isNotTest',
       type: 'confirm',
       message: 'Install vue-router?',
+      default: true
+    },
+    store: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Install vuex(状态管理)?',
+      default: true
     },
     lint: {
       when: 'isNotTest',
