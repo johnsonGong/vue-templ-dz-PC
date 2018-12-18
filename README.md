@@ -1,5 +1,5 @@
 # vue-templ-dz-PC
-任职cqdz开发框架之 模板: PC端
+任职cqdz开发框架之 模板: PC端 -- 鉴于 VUE CLI 3.X已经发布，此模板不再更新维护。
 
 ## 简介
 - 1. 增加状态管理组件: vuex;
@@ -20,3 +20,4 @@ vue init johnsonGong/vue-templ-dz-PC dz-demo-pc
 - vue 常见路由: Restful方式(优先), query -- 使用 {name: 'routName'} 方式跳转;
 - vuex 常用状态管理方式: v-model 双向绑定;
 - 整合 jquery;
+- 此模板只使用与 vue-cli < 3.0!
